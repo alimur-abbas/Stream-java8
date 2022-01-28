@@ -39,7 +39,7 @@ public class Mainimpl {
             list1.add(i);
         }
       int even= list1.stream().filter(value -> value%2==0).reduce(0,(a,b)-> a+b);
-        System.out.println(even);//20 as it will reduce the output to single value ...intially a=0 then b will be added to zero.
+        System.out.println(even);//20 as it will reduce the output to single value ...intially a = 0 , then b will be added to a.
         System.out.println(abc.stream().reduce((s,b)->s+"*"+b));// Example for reduce method adding all the string into one string. Output: Optional[ali *Happy *zoro *sam ]
 
 
